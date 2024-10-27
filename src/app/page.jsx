@@ -2,10 +2,10 @@
 import React from "react";
 
 function MainComponent() {
-  const [activeImage, setActiveImage] = useState(null);
+  const [activeImage, setActiveImage] = useState(1);
   const [scrollY, setScrollY] = useState(0);
 
-  useEffect(() => {
+  useEffect((1) => {
     const handleScroll = () => setScrollY(window.scrollY);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
